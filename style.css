@@ -6,17 +6,32 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    gap: 20px;
+    gap: 15px;
     padding: 0px;
     overflow: hidden;
     background-color: #ffffff;
     border: 1px solid #dac9c9;
     border-radius: 24px;
+   
+    width: 500px;
     
-    max-width: 75vw;       
     box-shadow: 0 4px 6px rgba(75, 95, 185, 1); 
 
     transition-duration: 200ms;
+
+
+    .pfp-img 
+    {
+    border-radius: 24px;
+    max-width: 190px;
+    
+    object-fit: cover;
+    display: block;
+    }
+
+    .pfp-img:hover{
+        cursor: pointer;
+    }
 }
 
 /* Profile box styling for hover*/
@@ -27,38 +42,56 @@
     
 }
 .box-text{
-    
+
     flex: 1;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 0px;
+    justify-content: center;
+    margin: auto;
 }
 
 .ProfileBox h2{
 
-    margin-top: 0;          
-    margin-bottom: 12px;     
+    margin-top: -0px;          
+    margin-bottom: -6px;     
     font-family: serif;
     font-size: 28px;
     color: #000000;
 }
 
-.ProfileBox p{
+.ProfileBox h3{
 
+    font-family: serif;
+    font-style: italic;
     margin: 0;              
-    color: #333333;
+    color: #3333337a;
     line-height: 1.4;       
     font-size: 16px;
 }
-.pfp-img {
- border-radius: 20px;
- max-width: 200px;
- object-fit: cover;
- display: block;
+.ProfileBox p{
+    
+    font-family: serif;
+    
+        margin-top: 20px;              
+        color: #000000;
+        line-height: 1.4;       
+        font-size: 16px;
+
 }
-.pfp-img:hover{
+.ProfileBtn{
+    
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+    
+}
+.ProfileBtn:hover{
 
     cursor: pointer;
 }
+
+
 
 /* My projects box thing i guess*/
 .ProjectsBox{
@@ -83,12 +116,13 @@
 
 /* Body styling*/
 body {
-    margin: 0;
-    padding-top: 70px; /* Crucial: Prevents your page content from hiding under the fixed bar */
-    font-family: Arial, sans-serif;
-    background-color: #292727;
-    display:grid;               /* Activates Grid layout */
-    place-items: center; 
+  margin: 0;                   /* Removes default browser margins */
+  height: 100vh;               /* Makes the body take up 100% of the viewport height */
+  display: flex;               /* Activates Flexbox layout */
+  justify-content: center;     /* Centers the panel horizontally */
+  align-items: center;         /* Centers the panel vertically */
+background-color: #17101a;
+    
 }
 
 
